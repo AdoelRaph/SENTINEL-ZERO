@@ -531,20 +531,22 @@ def main():
         reload=settings.environment == "development",
     )
 
+#if you would like to use api if not just run main.py i do that
 
-from api.routes import all_routers, set_orchestrator
+# from api.routes import all_routers, set_orchestrator
 
-# Include all routers
-for router in all_routers:
-    app.include_router(router)
+# # Include all routers
+# for router in all_routers:
+#     app.include_router(router)
 
-# Inject orchestrator after initialization (inside lifespan startup)
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    await orchestrator.initialize()
-    set_orchestrator(orchestrator)  # ← Add this line
-    yield
-    await orchestrator.shutdown()
+# # Inject orchestrator after initialization (inside lifespan startup)
+# @asynccontextmanager
+# async def lifespan(app: FastAPI):
+#     await orchestrator.initialize()
+#     set_orchestrator(orchestrator)  # ← Add this line
+#     yield
+#     await orchestrator.shutdown()
 
 if __name__ == "__main__":
+
     main()

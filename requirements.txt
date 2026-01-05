@@ -1,0 +1,54 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+pydantic-settings
+
+# Database - Neon PostgreSQL
+asyncpg
+sqlalchemy[asyncio]
+alembic
+
+# Cloud Storage - Cloudflare R2
+boto3
+botocore
+aioboto3
+
+# Network Scanning
+scapy
+python-nmap
+netifaces2
+netaddr
+
+# Machine Learning
+scikit-learn
+torch
+numpy
+pandas
+joblib
+
+# Security & Cryptography
+cryptography
+paramiko
+pywinrm
+bcrypt
+python-jose[cryptography]
+
+# HTTP & API Clients
+httpx
+aiohttp
+tenacity
+
+# Monitoring & Logging
+structlog
+python-json-logger
+prometheus-client
+
+# Scheduling
+apscheduler
+
+# Utilities
+pyyaml
+orjson
+python-dateutil

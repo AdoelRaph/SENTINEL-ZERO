@@ -363,34 +363,9 @@ SENTINEL-ZERO/
 
 ## 🎥 Demo
 
-### Detection Scenarios
+https://youtu.be/W8iXDErVfP4 
 
-**1. Backdoor Detection**
-```
-Scenario: Non-server workstation connecting to unknown IP on port 4444
-Detection Time: 1.2 seconds
-Confidence: 94%
-Action: Quarantine asset + alert SOC
-```
-
-**2. DoS Loop Detection**
-```
-Scenario: 1500 packets/sec with repetitive headers to gateway
-Detection Time: 8 seconds
-Confidence: 98%
-Action: Block source IP + create incident
-```
-
-**3. CVE Correlation**
-```
-Scenario: OpenSSH 7.4 detected (CVE-2024-6387 vulnerable)
-Detection Time: During network scan
-Action: Create remediation task + notify admin
-```
-
-### Demo Video (Coming Soon)
-
-*10-minute walkthrough showing live detection, remediation workflow, and audit trail generation*
+## demo does not really capture the entire features because of financial constraint i used blaze b2 first but 10gb free expired and kept on jumping until i decided to move to cloudflare i have buitl the code base to connect to cloudflare, you may use it **i choose it because it is cheap** the best way to try my software is to it up in less than an hour, and thanks  for the opportunity
 
 ---
 
@@ -724,5 +699,6 @@ Special thanks to Samir Vasavada and the Vise team for taking the time to review
 **Virado Tech** - Founded 2025 - Kumasi, Ghana
 
 </div>
+
 
 

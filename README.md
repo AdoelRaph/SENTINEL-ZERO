@@ -181,7 +181,30 @@ Continuous synchronization with:
 - PostgreSQL (or Neon account)
 - Cloudflare R2 bucket
 - nmap installed (for network scanning)
+- Admin/sudo access for Python package installation
 ```
+
+### ⚠️ Important Setup Notes
+
+**For Windows Users:**
+- Update `SCANNER_NMAP_PATH` in `.env` to your nmap installation path
+- Default: `C:\Program Files (x86)\Nmap\nmap.exe`
+- Run Command Prompt as Administrator when installing Python packages
+
+**For Linux/Mac Users:**
+- Update `SCANNER_NMAP_PATH` to `/usr/bin/nmap` or your nmap location
+- May need `sudo` for network scanning features
+
+**About Model Training:**
+- The model was initially trained using **Kaggle notebooks** (free GPU access)
+- Current version optimized for local training on constrained hardware
+- **Known Issue:** False positive rate ~15% - actively training with more data
+- You'll need to retrain with your own network traffic patterns for best results
+
+**Network Configuration:**
+- Update all IP ranges in the code to match YOUR network topology
+- The demo uses `192.168.1.0/24` - adjust in `main.py` and scanning configs
+- Test in isolated environment before production deployment
 
 ### Installation
 
@@ -194,12 +217,12 @@ cd SENTINEL-ZERO
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
+# Install dependencies (may require admin/sudo)
 pip install -r requirements.txt
 
 # Configure environment
 cp .env.example .env
-# Edit .env with your credentials
+# Edit .env with your actual credentials (see below)
 ```
 
 ### Configuration
@@ -566,25 +589,31 @@ But this is just **Phase 1** of Virado Tech.
 
 ### The Bigger Vision (What I Actually Care About)
 
-**Phase 2 (2026):** AI for African Agriculture
-- Crop yield prediction using satellite imagery + local weather data
-- Pest detection models trained on African crop diseases (not US/Europe datasets)
-- SMS-based recommendations for farmers without smartphones
+**Phase 2 (2026):** ML Task Orchestrator
+- Platform that distributes ML training/inference tasks to developers across Africa
+- Companies post ML jobs (data labeling, model training, fine-tuning)
+- African developers with GPUs/compute earn by completing tasks
+- **Why:** Makes African engineers participants in the AI economy, not just consumers
 
-**Phase 3 (2027):** Healthcare Diagnostics
-- Low-cost malaria detection using phone cameras + ML
-- Medical image analysis trained on African patient data
-- Offline-first AI for rural clinics with poor connectivity
+**Phase 3 (2027):** Contractor Matching Platform
+- AI-powered matching of African tech talent to global companies
+- Skills verification through actual project completion (not just resumes)
+- Payment infrastructure for cross-border freelance work
+- **Why:** $200B global freelance market, but African developers struggle with trust/payment
 
-**Phase 4 (2028+):** Financial Inclusion
-- Credit scoring models for the "unbanked" using mobile money patterns
-- Fraud detection for mobile payments (Ghana has 40M mobile money users)
-- AI-powered microfinance optimization
+**Phase 4 (2028):** Smart Architecture for African Housing
+- AI-optimized building designs for tropical climates (ventilation, cooling, materials)
+- Cost estimation models trained on local construction data
+- Modular designs that reduce waste and construction time
+- **Why:** Africa needs 50M+ housing units by 2030 - better design = affordable housing
 
-**Why Ghana/Africa needs this:**
-- Most AI models are trained on Western data (useless for our crops, diseases, financial behaviors)
-- Cloud-dependent AI doesn't work in areas with poor internet
-- Expensive AI tools price out the organizations that need them most
+**Why These Three?**
+
+**ML Orchestrator** → Creates immediate income for African engineers with compute  
+**Contractor Platform** → Connects African talent to global demand  
+**Smart Housing** → Solves Africa's most critical infrastructure gap  
+
+All three use AI/ML to solve problems Silicon Valley isn't touching because they're not "scalable enough" or don't understand African markets.
 
 ### What I Need From Vise
 
@@ -612,17 +641,24 @@ I'm not asking you to fund my bigger vision (yet). I'm asking for:
 
 **2025:** Sentinel-Zero gets 5-10 enterprise customers → $500K-$1M ARR → Hire 3 engineers in Ghana
 
-**2026:** Use that revenue + team to launch Agri-AI product for Ghanaian farmers
+**2026:** Launch ML Task Orchestrator → African developers earning from global AI work
 
-**2027:** Both products profitable → Raise Series A to scale across Africa
+**2027:** Contractor Platform live → 1000+ African engineers placed with global companies
+
+**2028:** Smart Housing designs deployed → 10,000 affordable units built across Ghana
 
 **2030:** Virado Tech is the leading African AI company solving problems that Silicon Valley ignores
 
 ### Why This Matters
 
-Ghana has **33 million people**. Most will never use ChatGPT or Midjourney—they need AI that helps them grow cassava, avoid malaria, and access credit. 
+Ghana has **33 million people**. Nigeria has **220 million**. Africa has **1.4 billion**.
 
-I'm building Sentinel-Zero so I can eventually build **that AI**. But I need mentors like you who've actually done the hard part: turned an idea into a real company.
+Most will never use ChatGPT or Midjourney—they need AI that:
+- **Creates jobs** (ML orchestrator, contractor platform)
+- **Solves infrastructure gaps** (smart housing)
+- **Works with African constraints** (poor internet, limited compute, local data)
+
+I'm building Sentinel-Zero so I can eventually build **that future**. But I need mentors like you who've actually done the hard part: turned an idea into a real company.
 
 Security is my **strategy**. AI for Africa is my **mission**.
 

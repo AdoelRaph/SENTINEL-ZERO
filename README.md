@@ -692,7 +692,8 @@ Copyright (c) 2025 Virgil Junior Adoleyine. All rights reserved.
 
 This software is proprietary and confidential. Limited viewing and evaluation rights are granted for review purposes only. Commercial use, redistribution, or derivative works require explicit written permission.
 
-See [LICENSE](LICENSE) for full terms.
+See [[LICENSE](https://github.com/AdoelRaph/SENTINEL-ZERO/tree/main?tab=License-1-ov-file)]
+for full terms.
 
 For licensing inquiries: **techkid3692@gmail.com**
 
@@ -722,3 +723,4 @@ Special thanks to Samir Vasavada and the Vise team for taking the time to review
 **Virado Tech** - Founded 2025 - Kumasi, Ghana
 
 </div>
+

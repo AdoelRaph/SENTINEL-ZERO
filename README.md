@@ -1,4 +1,5 @@
-# Sentinel-Zero
+# Sentinel-Zero SETUP TIME = ESTIMATED 40-50mins 
+**GO THROUGH ALL .md FILES TO SETUP AND TRY TO YOUR PREFERENCE**
 
 <div align="center">
 
@@ -723,4 +724,5 @@ Special thanks to Samir Vasavada and the Vise team for taking the time to review
 **Virado Tech** - Founded 2025 - Kumasi, Ghana
 
 </div>
+
 

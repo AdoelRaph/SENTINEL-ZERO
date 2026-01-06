@@ -615,7 +615,7 @@ I'm not asking you to fund my bigger vision (yet). I'm asking for:
 
 ### What Success Looks Like
 
-**2025:** Sentinel-Zero gets 5-10 enterprise customers → $500K-$1M ARR → Hire 3 engineers in Ghana
+**2026:** Sentinel-Zero gets 5-10 enterprise customers → $500K-$1M ARR → Hire 3 engineers in Ghana
 
 **2026:** Launch ML Task Orchestrator → African developers earning from global AI work
 
@@ -699,6 +699,7 @@ Special thanks to Samir Vasavada and the Vise team for taking the time to review
 **Virado Tech** - Founded 2025 - Kumasi, Ghana
 
 </div>
+
 
 
 
